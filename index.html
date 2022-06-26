@@ -11,7 +11,7 @@
   </head>
   <body>
       
-    <div class="container">
+    <div class="container" style="margin-bottom: 500px;">
         <h3 id="title">Cybersoft</h3>
         <br />
         <input id="txt" class="form-control w-25" value="123" />
@@ -19,7 +19,19 @@
         <input id="number" class="form-control w-25" value="10000000" />
         <br />
         <div class="w-25">
-            <img class="w-100" src="./img/68___giếng_làng_quảng_phú_cầu__ứng_hòa___ảnh_viết_mạnh-16_51_07_908.jpeg" id="hinhAnh" />
+            <img class="w-100" src="./img/hinh1.jpeg" id="hinhAnh" />
+        </div>
+        <br />
+        <button onclick="sayHello()" class="btn btn-success">Say Hello</button>
+        <hr />
+        <div class="form-group">
+            <p>Ví dụ 1: Nhập vào 1 giá trị và in ra giá trị tại kết quả</p>
+            <input id="giaTriNhap" class="form-control w-25" />
+            <br />
+            <button onclick="hienThiThongTin()" id="btnHienThi" class="btn btn-success">Hiển thị</button>
+            <div class="mt-2 text-success">
+                Kết quả: <span id="ketQuaHienThi"></span>
+            </div>
         </div>
     </div>
     <!-- Optional JavaScript -->
