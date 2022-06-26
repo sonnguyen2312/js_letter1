@@ -8,4 +8,6 @@ tagInput.value = '123456';
 // Truy xuất đến giá trị value của thẻ
 var tagInputNumber = document.getElementById('number');
  console.log(tagInputNumber.value);
- alert(tagInputNumber.value);
+// .src là nội dung hình ảnh của thẻ img
+var tagImg = document.getElementById('hinhAnh');
+tagImg.src = './img/hinh2.webp'
