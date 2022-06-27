@@ -32,3 +32,21 @@ function hienThiThongTin (){
     var tagSpanKetQua = document.getElementById('ketQuaHienThi');
     tagSpanKetQua.innerHTML = output;
 }
+
+/*
+    Ví dụ 2: Nhập vào số tiền lương(1h) và số giờ làm  In ra tổng lương bằng số giờ nhân tiền lương
+*/
+function tinhTongLuong (){
+    // alert (214);
+    // input: tienLuong1h:number, soGioLam:number
+    var tienLuong = document.getElementById('tienLuong1h').value;
+    var soGioLam = document.getElementById('soGioLam').value;
+    // kiểm tra input
+    // console.log('Tiền lương', tienLuong);
+    // console.log('So Gio Lam',soGioLam);
+    //output: tongLuong: number
+    var tongLuong = 0;
+    // progress
+    tongLuong = tienLuong * soGioLam;
+    document.getElementById('tongLuong').innerHTML = tongLuong;
+}
