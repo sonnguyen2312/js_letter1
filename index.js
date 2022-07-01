@@ -50,3 +50,27 @@ function tinhTongLuong (){
     tongLuong = tienLuong * soGioLam;
     document.getElementById('tongLuong').innerHTML = tongLuong;
 }
+/*
+    Ví dụ 3: Xây dựng form đăng nhập
+*/
+var btnDangNhap = document.getElementById('btnDangNhap');
+btnDangNhap.onclick = function(){ //anonymous function
+    //input: taikhoan: string
+    var taiKhoan = document.getElementById('taiKhoan').value;
+    var matKhau = document.getElementById('matKhau').value;
+    // console.log('Tai khoan', taiKhoan);
+    // console.log('Mat khau',matKhau);
+    //output: thongBao:string
+    let thongBao = '';
+    //proress: 
+    thongBao = 'Tài khoản: ' + taiKhoan + ' - Mật khẩu: ' + matKhau;
+    //alt+z hoặc option +z => xuống dòng
+    var tagKetQua = document.getElementById('ketQuaDangNhap');
+    tagKetQua.innerHTML = thongBao;
+    // Thay đổi màu sắc
+    // tagKetQua.style.backgroundColor = 'green';
+    // tagKetQua.style.padding = '15px';
+    // tagKetQua.style.color = '#fff'
+    // tagKetQua.style.margin = '15px';
+    tagKetQua.className = 'bg-success p-2 m-2 text-white';
+}
