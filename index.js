@@ -74,3 +74,22 @@ btnDangNhap.onclick = function(){ //anonymous function
     // tagKetQua.style.margin = '15px';
     tagKetQua.className = 'bg-success p-2 m-2 text-white';
 }
+// Ví dụ 4:Tính tiền tip
+document.getElementById('btnTinhTienTip').onclick = function (){
+    /*
+        input: 
+            + tongTienThanhToan : number
+            + phanTramTip: number
+            + soNguoiTip: number
+        progress:
+            + Lấy thông tin người dùng nhập từ giao diện
+        output:
+            + tienTipTrenNguoi: number
+    */
+   var tongTienThanhToan = document.getElementById('tongTienThanhToan').value;
+   var phanTramTip = document.getElementById('phanTramTip').value;
+   var soNguoiTip = document.getElementById('soNguoiTip').value;
+   var tienTipTrenNguoi = 0;
+   tienTipTrenNguoi = (tongTienThanhToan * phanTramTip/100)/soNguoiTip;
+   document.getElementById('tienTipTrenNguoi').innerHTML = tienTipTrenNguoi + ' $';
+}
